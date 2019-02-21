@@ -20,8 +20,8 @@ namespace ConsoleApp1
             //Console.WriteLine("Rješenje je zbroj 20 + 10 = "+ p.Add(p.A,p.b));
             Console.WriteLine("Ovo je moj " +
                 " današnji " + 1 +
-                "" +
                 "." +
+                "" +
                 " program");
             //Console.ReadKey();
             Console.ReadLine();
