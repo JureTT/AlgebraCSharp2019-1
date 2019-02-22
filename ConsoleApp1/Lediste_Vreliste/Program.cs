@@ -13,8 +13,8 @@ namespace Lediste_Vreliste
             int vreliste = 100;
             int lediste = 0;
 
-            Console.WriteLine("Vrelište vode je na " + vreliste + " celzijevih stupnjeva, " +
-                "a ledište vode ja na " + lediste + " celzijevih stupnjeva.");
+            Console.WriteLine("Vrelište vode je na " + vreliste + "° C (celzijevih stupnjeva), " +
+                "a ledište vode je na " + lediste + "° C (celzijevih stupnjeva).");
             Console.ReadKey();
         }
     }
