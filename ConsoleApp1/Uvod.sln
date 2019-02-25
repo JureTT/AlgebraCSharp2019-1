@@ -25,6 +25,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Uvjetno_Vece_od_10", "Uvjet
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "primjer_5.2.1.2_pozitivan", "primjer_5.2.1.2_pozitivan\primjer_5.2.1.2_pozitivan.csproj", "{EF25FF45-1C23-4041-ADF2-0A8875DBF158}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "primjer_5.2.2.switch", "primjer_5.2.2.switch\primjer_5.2.2.switch.csproj", "{3843EF7A-4E6A-462A-BDBD-55B334B235B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "primjer_5.2.3_exception", "primjer_5.2.3_exception\primjer_5.2.3_exception.csproj", "{88ADC553-A23D-40DA-A18C-4038FC98BCCE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +67,14 @@ Global
 		{EF25FF45-1C23-4041-ADF2-0A8875DBF158}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF25FF45-1C23-4041-ADF2-0A8875DBF158}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EF25FF45-1C23-4041-ADF2-0A8875DBF158}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3843EF7A-4E6A-462A-BDBD-55B334B235B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3843EF7A-4E6A-462A-BDBD-55B334B235B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3843EF7A-4E6A-462A-BDBD-55B334B235B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3843EF7A-4E6A-462A-BDBD-55B334B235B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88ADC553-A23D-40DA-A18C-4038FC98BCCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88ADC553-A23D-40DA-A18C-4038FC98BCCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88ADC553-A23D-40DA-A18C-4038FC98BCCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88ADC553-A23D-40DA-A18C-4038FC98BCCE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -74,5 +86,7 @@ Global
 		{3D213AB2-2D87-4144-B9A3-E583852D7DBA} = {64F83FFB-FC64-467B-A3AF-67509A59F440}
 		{010DB3DA-6C10-49A1-9687-B32600582033} = {7C67F62C-3DBF-43A9-80CB-BF0A3C009D5C}
 		{EF25FF45-1C23-4041-ADF2-0A8875DBF158} = {7C67F62C-3DBF-43A9-80CB-BF0A3C009D5C}
+		{3843EF7A-4E6A-462A-BDBD-55B334B235B0} = {7C67F62C-3DBF-43A9-80CB-BF0A3C009D5C}
+		{88ADC553-A23D-40DA-A18C-4038FC98BCCE} = {7C67F62C-3DBF-43A9-80CB-BF0A3C009D5C}
 	EndGlobalSection
 EndGlobal
