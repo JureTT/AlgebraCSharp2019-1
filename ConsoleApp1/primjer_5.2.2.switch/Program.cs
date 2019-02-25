@@ -8,19 +8,36 @@ namespace primjer_5._2._2.@switch
 {
     class Program
     {
+        static double SafeDivision(double x, double y)
+        {
+            if (y == 0)
+            {
+                throw new System.DivideByZeroException();
+            }
+            return x / y;
+        }
         static void Main(string[] args)
         {
-            float a, b = 0;
+            float a = 0, b = 0;
             string operacija = "";
 
-            Console.WriteLine("Unesi 1. prirodan broj:");
-            a = float.Parse(Console.ReadLine());
+            try
+            {
+                Console.WriteLine("Unesi 1. prirodan broj:");
+                a = float.Parse(Console.ReadLine());
 
-            Console.WriteLine("Unesi 2. prirodan broj:");
-            b = float.Parse(Console.ReadLine());
+                Console.WriteLine("Unesi 2. prirodan broj:");
+                b = float.Parse(Console.ReadLine());
 
-            Console.WriteLine("Unesi željenu operaciju ( + - * / ):");
-            operacija = Console.ReadLine();
+                Console.WriteLine("Unesi željenu operaciju ( + - * / ):");
+                operacija = Console.ReadLine();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("1. graška: " + ex.ToString());
+            }
+            finally
+            { }
 
             switch (operacija)
             {
@@ -36,7 +53,14 @@ namespace primjer_5._2._2.@switch
                     Console.WriteLine("Umnožak je: {0} * {1} = {2}", a, b, (a * b));
                     break;
                 case "/":
-                    Console.WriteLine("Kvocijent je: {0} / {1} = {2}", a, b, (a / b));
+                    try
+                    {
+                        Console.WriteLine("Kvocijent je: {0} / {1} = {2}", a, b, SafeDivision(a, b));
+                    }
+                    catch (Exception ex2)
+                    {
+                        Console.WriteLine("2. greška: " + ex2.ToString());
+                    }
                     break;
                 default:
                     Console.WriteLine("Nisi unio valjani znak za neku od mogućih operacija");
@@ -44,6 +68,8 @@ namespace primjer_5._2._2.@switch
             }
 
             Console.ReadKey();
-        }
+
+       }
+
     }
 }
