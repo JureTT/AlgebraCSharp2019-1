@@ -21,6 +21,7 @@ namespace Uvjetno_Vece_od_10
                 Console.WriteLine("Uneseni broj NIJE veći od 10.");
             }
             Console.ReadKey();
+
         }
     }
 }
