@@ -54,6 +54,14 @@ namespace Cikličke_petlje_primjeri
 
             }
 
+            //Suma prvih 100 brojeva
+            Console.WriteLine("\n\nSuma prvih 100 brojeva ");
+            int suma = 0;
+            for (int i = 0; i <= 100; i++)
+            {
+                Console.Write("{0} ", suma += i);
+            }
+
             Console.ReadLine();
         }
     }
