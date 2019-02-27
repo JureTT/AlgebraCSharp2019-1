@@ -79,6 +79,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zadatak 5.3.17 zbirka", "za
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zadatak 5.3.19 zbirka", "zadatak 5.3.19 zbirka\zadatak 5.3.19 zbirka.csproj", "{B95FC6A7-0088-456F-9C97-372D60AF9899}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zadatak 5.3.21 zbirka", "zadatak 5.3.21 zbirka\zadatak 5.3.21 zbirka.csproj", "{49B3CD42-141E-4F2F-B125-27B4347D1EE6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -221,6 +223,10 @@ Global
 		{B95FC6A7-0088-456F-9C97-372D60AF9899}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B95FC6A7-0088-456F-9C97-372D60AF9899}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B95FC6A7-0088-456F-9C97-372D60AF9899}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49B3CD42-141E-4F2F-B125-27B4347D1EE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49B3CD42-141E-4F2F-B125-27B4347D1EE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49B3CD42-141E-4F2F-B125-27B4347D1EE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49B3CD42-141E-4F2F-B125-27B4347D1EE6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -258,5 +264,9 @@ Global
 		{FC3ECDB6-627F-4843-B7F6-79AEAA675CB8} = {A3B3075A-668F-40AA-B6A5-75F348C091E4}
 		{9AA5622E-7DF5-4296-98EA-197EB133622D} = {A3B3075A-668F-40AA-B6A5-75F348C091E4}
 		{B95FC6A7-0088-456F-9C97-372D60AF9899} = {A3B3075A-668F-40AA-B6A5-75F348C091E4}
+		{49B3CD42-141E-4F2F-B125-27B4347D1EE6} = {A3B3075A-668F-40AA-B6A5-75F348C091E4}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1EA19B27-98D7-401A-9533-D6EF56F03BBC}
 	EndGlobalSection
 EndGlobal
