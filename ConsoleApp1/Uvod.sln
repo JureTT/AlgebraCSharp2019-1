@@ -69,6 +69,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zadatak 5.3.7 zbirka", "zad
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zadatak 5.3.9 zbirka", "zadatak 5.3.9 zbirka\zadatak 5.3.9 zbirka.csproj", "{7854D112-B719-486C-8479-E861C91BDD81}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zadatak 5.3.11 zbirka", "zadatak 5.3.11 zbirka\zadatak 5.3.11 zbirka.csproj", "{280339EB-2165-40A0-A986-B0BC021AFC81}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -191,6 +193,10 @@ Global
 		{7854D112-B719-486C-8479-E861C91BDD81}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7854D112-B719-486C-8479-E861C91BDD81}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7854D112-B719-486C-8479-E861C91BDD81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{280339EB-2165-40A0-A986-B0BC021AFC81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{280339EB-2165-40A0-A986-B0BC021AFC81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{280339EB-2165-40A0-A986-B0BC021AFC81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{280339EB-2165-40A0-A986-B0BC021AFC81}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -223,5 +229,6 @@ Global
 		{CB00B0F1-2FA4-442A-AEC1-9ED465EB9DE1} = {A3B3075A-668F-40AA-B6A5-75F348C091E4}
 		{C58B8522-7722-4938-AFCA-76272BC9D452} = {A3B3075A-668F-40AA-B6A5-75F348C091E4}
 		{7854D112-B719-486C-8479-E861C91BDD81} = {A3B3075A-668F-40AA-B6A5-75F348C091E4}
+		{280339EB-2165-40A0-A986-B0BC021AFC81} = {A3B3075A-668F-40AA-B6A5-75F348C091E4}
 	EndGlobalSection
 EndGlobal
