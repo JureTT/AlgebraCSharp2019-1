@@ -61,7 +61,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Primjeri petlja_while", "Pr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zadatak 5.3.1 zbirka", "zadatak 5.3.1 zbirka\zadatak 5.3.1 zbirka.csproj", "{8B5F7B77-A307-4248-9979-1895425FC126}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "primjer 5.3.4 prirucnik (faktorijel)", "primjer 5.3.4 prirucnik (faktorijel)\primjer 5.3.4 prirucnik (faktorijel).csproj", "{67CA99AA-32E2-4A51-B645-2CDC37ABF2DC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zadatak 5.3.4 zbirka (faktorijel i exceptioni)", "primjer 5.3.4 prirucnik (faktorijel)\zadatak 5.3.4 zbirka (faktorijel i exceptioni).csproj", "{67CA99AA-32E2-4A51-B645-2CDC37ABF2DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zadatak 5.3.5  zbirka", "zadatak 5.3.5  zbirka\zadatak 5.3.5  zbirka.csproj", "{CB00B0F1-2FA4-442A-AEC1-9ED465EB9DE1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -173,6 +175,10 @@ Global
 		{67CA99AA-32E2-4A51-B645-2CDC37ABF2DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{67CA99AA-32E2-4A51-B645-2CDC37ABF2DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{67CA99AA-32E2-4A51-B645-2CDC37ABF2DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB00B0F1-2FA4-442A-AEC1-9ED465EB9DE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB00B0F1-2FA4-442A-AEC1-9ED465EB9DE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB00B0F1-2FA4-442A-AEC1-9ED465EB9DE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB00B0F1-2FA4-442A-AEC1-9ED465EB9DE1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -202,5 +208,6 @@ Global
 		{11B641E0-2C97-4A47-A632-9B586F93B700} = {A3B3075A-668F-40AA-B6A5-75F348C091E4}
 		{8B5F7B77-A307-4248-9979-1895425FC126} = {A3B3075A-668F-40AA-B6A5-75F348C091E4}
 		{67CA99AA-32E2-4A51-B645-2CDC37ABF2DC} = {A3B3075A-668F-40AA-B6A5-75F348C091E4}
+		{CB00B0F1-2FA4-442A-AEC1-9ED465EB9DE1} = {A3B3075A-668F-40AA-B6A5-75F348C091E4}
 	EndGlobalSection
 EndGlobal
