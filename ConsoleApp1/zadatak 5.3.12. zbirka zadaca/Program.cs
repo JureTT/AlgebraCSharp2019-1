@@ -13,7 +13,7 @@ namespace zadatak_5._3._12.zbirka_zadaca
             Console.WriteLine("Program ispisuje zbroj i prosjek 5 unešenih brojeva.");
 
             int zbroj = 0;
-            int prosjek = 0;
+            double prosjek = 0;
             for (int i = 1; i <= 5; i++)
             {
                 Console.WriteLine("Unesite {0}. prirodan broj:", i);
@@ -21,7 +21,7 @@ namespace zadatak_5._3._12.zbirka_zadaca
                 zbroj += a;
             }
 
-            prosjek = zbroj / 5;
+            prosjek = (double)zbroj / 5;
 
             Console.WriteLine("Zbroj svih unešenih brojeva je {0}, a njihov prosjek je {1}.", zbroj, prosjek);
             Console.ReadKey();
