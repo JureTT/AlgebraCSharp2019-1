@@ -109,6 +109,18 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Primjer 6.2.1.1", "Primjer 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zadatak 6.1.2 zbirka", "zadatak 6.1.2 zbirka\zadatak 6.1.2 zbirka.csproj", "{9D6DE755-48CE-4A5D-9071-852DA4CD8FA7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "primjer 6.2.2 - Petlja Foreach (primjer iz knjige) exception", "primjer 6.2.2 - Petlja Foreach (primjer iz knjige)\primjer 6.2.2 - Petlja Foreach (primjer iz knjige) exception.csproj", "{4EFACF87-3CB4-48BD-A70F-20C9EB88BF70}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "primjer 6.2.2 - Genericke kolekcije (primjer iz knjige)", "primjer 6.2.2 - Genericke kolekcije (primjer iz knjige)\primjer 6.2.2 - Genericke kolekcije (primjer iz knjige).csproj", "{FED64D82-D95D-41FE-8A23-DAC52243676C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zadatak 6.2.2 zbirka", "zadatak 6.2.2 zbirka\zadatak 6.2.2 zbirka.csproj", "{DB47E22E-3074-4C86-8C5A-C0D465373916}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zadatak 6.2.3 zbirka", "zadatak 6.2.3 zbirka\zadatak 6.2.3 zbirka.csproj", "{025F5BDE-62AC-44A3-B879-9D24D2C2BFDD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zadatak 6.2.4 zbirka", "zadatak 6.2.4 zbirka\zadatak 6.2.4 zbirka.csproj", "{ACC42053-F8A1-405C-9CA1-64727813E4B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zadatak 6.2.5 zbirka", "zadatak 6.2.5 zbirka\zadatak 6.2.5 zbirka.csproj", "{1E9C1200-D69A-4E44-91C8-7319AA5033E1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -303,6 +315,30 @@ Global
 		{9D6DE755-48CE-4A5D-9071-852DA4CD8FA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9D6DE755-48CE-4A5D-9071-852DA4CD8FA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9D6DE755-48CE-4A5D-9071-852DA4CD8FA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4EFACF87-3CB4-48BD-A70F-20C9EB88BF70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EFACF87-3CB4-48BD-A70F-20C9EB88BF70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EFACF87-3CB4-48BD-A70F-20C9EB88BF70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EFACF87-3CB4-48BD-A70F-20C9EB88BF70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FED64D82-D95D-41FE-8A23-DAC52243676C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FED64D82-D95D-41FE-8A23-DAC52243676C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FED64D82-D95D-41FE-8A23-DAC52243676C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FED64D82-D95D-41FE-8A23-DAC52243676C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB47E22E-3074-4C86-8C5A-C0D465373916}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB47E22E-3074-4C86-8C5A-C0D465373916}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB47E22E-3074-4C86-8C5A-C0D465373916}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB47E22E-3074-4C86-8C5A-C0D465373916}.Release|Any CPU.Build.0 = Release|Any CPU
+		{025F5BDE-62AC-44A3-B879-9D24D2C2BFDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{025F5BDE-62AC-44A3-B879-9D24D2C2BFDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{025F5BDE-62AC-44A3-B879-9D24D2C2BFDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{025F5BDE-62AC-44A3-B879-9D24D2C2BFDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACC42053-F8A1-405C-9CA1-64727813E4B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACC42053-F8A1-405C-9CA1-64727813E4B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACC42053-F8A1-405C-9CA1-64727813E4B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACC42053-F8A1-405C-9CA1-64727813E4B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E9C1200-D69A-4E44-91C8-7319AA5033E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E9C1200-D69A-4E44-91C8-7319AA5033E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E9C1200-D69A-4E44-91C8-7319AA5033E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E9C1200-D69A-4E44-91C8-7319AA5033E1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -354,6 +390,12 @@ Global
 		{D4FDC32B-3A57-4AD8-9706-0A27A38A1CCE} = {B124174D-146E-4966-B337-29E478F59F59}
 		{CD044FB3-CBFE-4957-AEF7-CF910907DB5D} = {B124174D-146E-4966-B337-29E478F59F59}
 		{9D6DE755-48CE-4A5D-9071-852DA4CD8FA7} = {B124174D-146E-4966-B337-29E478F59F59}
+		{4EFACF87-3CB4-48BD-A70F-20C9EB88BF70} = {B124174D-146E-4966-B337-29E478F59F59}
+		{FED64D82-D95D-41FE-8A23-DAC52243676C} = {B124174D-146E-4966-B337-29E478F59F59}
+		{DB47E22E-3074-4C86-8C5A-C0D465373916} = {B124174D-146E-4966-B337-29E478F59F59}
+		{025F5BDE-62AC-44A3-B879-9D24D2C2BFDD} = {B124174D-146E-4966-B337-29E478F59F59}
+		{ACC42053-F8A1-405C-9CA1-64727813E4B6} = {B124174D-146E-4966-B337-29E478F59F59}
+		{1E9C1200-D69A-4E44-91C8-7319AA5033E1} = {B124174D-146E-4966-B337-29E478F59F59}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1EA19B27-98D7-401A-9533-D6EF56F03BBC}
