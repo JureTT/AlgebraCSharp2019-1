@@ -15,6 +15,7 @@ namespace primjer_7._2._2
             Pozdrav(prezime:"Perić", ime:"Ime");    // ako se želi drugim redosljedom unjeti varijable,
                                                     // moraju se imenovati varijable i dodati im se vrijednosti dvotočkom 
 
+
             Console.ReadLine();
         }
 
