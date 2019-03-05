@@ -101,7 +101,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zadatak 5.3.20 zbirka zadac
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zadatak 5.3.22 zbirka zadaca", "zadatak 5.3.22 zbirka zadaca\zadatak 5.3.22 zbirka zadaca.csproj", "{6312BBCB-C007-4A2F-81CC-1A5733DA5CCC}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6.1 Nizovi", "6.1 Nizovi", "{B124174D-146E-4966-B337-29E478F59F59}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6.1. Nizovi", "6.1. Nizovi", "{B124174D-146E-4966-B337-29E478F59F59}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Primjer 6.1.1", "Primjer 6.1.1\Primjer 6.1.1.csproj", "{D4FDC32B-3A57-4AD8-9706-0A27A38A1CCE}"
 EndProject
@@ -120,6 +120,12 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zadatak 6.2.4 zbirka", "zadatak 6.2.4 zbirka\zadatak 6.2.4 zbirka.csproj", "{ACC42053-F8A1-405C-9CA1-64727813E4B6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zadatak 6.2.5 zbirka", "zadatak 6.2.5 zbirka\zadatak 6.2.5 zbirka.csproj", "{1E9C1200-D69A-4E44-91C8-7319AA5033E1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "7.1. Procedure(Metode)", "7.1. Procedure(Metode)", "{21E71F85-839A-48FD-AC8D-45F43072D0C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7.2. Potprogrami", "7.2. Potprogrami\7.2. Potprogrami.csproj", "{17AD08B3-C93D-42E1-A3CF-D59E1D64AE8A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "primjer 7.2.2", "primjer 7.2.2\primjer 7.2.2.csproj", "{93338DAE-9D0B-47AF-86A9-C346E3EAF8B7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -339,6 +345,14 @@ Global
 		{1E9C1200-D69A-4E44-91C8-7319AA5033E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1E9C1200-D69A-4E44-91C8-7319AA5033E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1E9C1200-D69A-4E44-91C8-7319AA5033E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17AD08B3-C93D-42E1-A3CF-D59E1D64AE8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17AD08B3-C93D-42E1-A3CF-D59E1D64AE8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17AD08B3-C93D-42E1-A3CF-D59E1D64AE8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17AD08B3-C93D-42E1-A3CF-D59E1D64AE8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93338DAE-9D0B-47AF-86A9-C346E3EAF8B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93338DAE-9D0B-47AF-86A9-C346E3EAF8B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93338DAE-9D0B-47AF-86A9-C346E3EAF8B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93338DAE-9D0B-47AF-86A9-C346E3EAF8B7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -396,6 +410,8 @@ Global
 		{025F5BDE-62AC-44A3-B879-9D24D2C2BFDD} = {B124174D-146E-4966-B337-29E478F59F59}
 		{ACC42053-F8A1-405C-9CA1-64727813E4B6} = {B124174D-146E-4966-B337-29E478F59F59}
 		{1E9C1200-D69A-4E44-91C8-7319AA5033E1} = {B124174D-146E-4966-B337-29E478F59F59}
+		{17AD08B3-C93D-42E1-A3CF-D59E1D64AE8A} = {21E71F85-839A-48FD-AC8D-45F43072D0C7}
+		{93338DAE-9D0B-47AF-86A9-C346E3EAF8B7} = {21E71F85-839A-48FD-AC8D-45F43072D0C7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1EA19B27-98D7-401A-9533-D6EF56F03BBC}
