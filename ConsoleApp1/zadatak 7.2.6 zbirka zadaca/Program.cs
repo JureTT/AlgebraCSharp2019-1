@@ -12,11 +12,38 @@ namespace zadatak_7._2._6_zbirka_zadaca
         {
             Console.WriteLine("Program za provjeru da li je unesieni prirodan broj složen ili prost.");
 
-            Console.WriteLine("Unesite prirodan broj:");
-            int broj = int.Parse(Console.ReadLine());
+            bool izbor = true;
+            while (izbor != false)
+            {
+                Console.WriteLine("Unesite prirodan broj:");
+                int broj = int.Parse(Console.ReadLine());
 
-             string provjera = Provjera(broj);
-            Console.WriteLine("Broj koji ste unjeli je {0}.", provjera);
+                string provjera = Provjera(broj);
+                Console.WriteLine("Broj koji ste unjeli je {0}.", provjera);
+
+                Console.WriteLine("Dali želite ponovo provjeriti neki broj(da/ne)?");
+                string odluka = Console.ReadLine();
+                while (odluka !="n")
+                {
+                    
+                    if (odluka == "d" || odluka == "D" || odluka == "DA" || odluka == "Da" || odluka == "dA")
+                    {
+                        odluka = "d";
+                        izbor = true;
+                    }
+                    else if (odluka == "n" || odluka == "N" || odluka == "NE" || odluka == "Ne" || odluka == "nE")
+                    {
+                        odluka = "n";
+                        izbor = false;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Neispravan unos pokušajte ponovo.");
+                        Console.WriteLine("Dali želite ponovo provjeriti neki broj(da/ne)?");
+                        odluka = Console.ReadLine();
+                    }
+                }
+            }
 
             Console.ReadKey();
         }
