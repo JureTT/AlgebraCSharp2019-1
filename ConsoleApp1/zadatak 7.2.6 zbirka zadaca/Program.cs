@@ -23,17 +23,17 @@ namespace zadatak_7._2._6_zbirka_zadaca
 
                 Console.WriteLine("Dali želite ponovo provjeriti neki broj(da/ne)?");
                 string odluka = Console.ReadLine();
-                while (odluka !="n")
+                while (odluka == "d")
                 {
                     
                     if (odluka == "d" || odluka == "D" || odluka == "DA" || odluka == "Da" || odluka == "dA")
                     {
                         odluka = "d";
-                        izbor = true;
+                        //izbor = true;
                     }
                     else if (odluka == "n" || odluka == "N" || odluka == "NE" || odluka == "Ne" || odluka == "nE")
                     {
-                        odluka = "n";
+                        //odluka = "n";
                         izbor = false;
                     }
                     else
