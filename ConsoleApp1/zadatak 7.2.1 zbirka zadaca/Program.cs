@@ -10,7 +10,7 @@ namespace zadatak_7._2._1_zbirka_zadaca
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Pogram za računanje opsega i površine kruga.");
+            Console.WriteLine("Program za računanje opsega i površine kruga.");
 
             Console.WriteLine("Unesite vrijednost polumjera kruga (cm):");
             float polumjer = float.Parse(Console.ReadLine());

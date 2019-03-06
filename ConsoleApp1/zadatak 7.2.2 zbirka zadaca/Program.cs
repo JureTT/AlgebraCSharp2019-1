@@ -10,7 +10,7 @@ namespace zadatak_7._2._2_zbirka_zadaca
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Pogram za računanje površine jednakokračnog trokuta.");
+            Console.WriteLine("Program za računanje površine jednakokračnog trokuta.");
 
             Console.WriteLine("Unesite duljinu osnovice trokuta (cm):");
             float osnovica = float.Parse(Console.ReadLine());
