@@ -23,7 +23,7 @@ namespace primjer_8._1._2_prirucnik
         {
             this.ime = v;
             this.prezime = prez;
-        }
+        }  
 
         internal double Prosjek()
         {
