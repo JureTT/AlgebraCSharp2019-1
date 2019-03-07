@@ -23,24 +23,31 @@ namespace zadatak_7._2._6_zbirka_zadaca
 
                 Console.WriteLine("Dali želite ponovo provjeriti neki broj(da/ne)?");
                 string odluka = Console.ReadLine();
-                while (odluka == "d")
-                {
-                    
+                while (izbor == true)
+                {                    
                     if (odluka == "d" || odluka == "D" || odluka == "DA" || odluka == "Da" || odluka == "dA")
                     {
-                        odluka = "d";
-                        //izbor = true;
+                        izbor = true;
+                        break;
                     }
                     else if (odluka == "n" || odluka == "N" || odluka == "NE" || odluka == "Ne" || odluka == "nE")
                     {
-                        //odluka = "n";
                         izbor = false;
+                        break;
                     }
                     else
                     {
-                        Console.WriteLine("Neispravan unos pokušajte ponovo.");
-                        Console.WriteLine("Dali želite ponovo provjeriti neki broj(da/ne)?");
-                        odluka = Console.ReadLine();
+                        try
+                        {
+                            Console.WriteLine("Neispravan unos pokušajte ponovo.");
+                            Console.WriteLine("Dali želite ponovo provjeriti neki broj(da/ne)?");
+                            odluka = Console.ReadLine();
+                        }
+                        catch (Exception ex)
+                        {
+                            Console.WriteLine(ex.ToString());
+                        }
+                        
                     }
                 }
             }
