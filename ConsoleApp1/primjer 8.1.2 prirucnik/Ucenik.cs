@@ -4,12 +4,18 @@ namespace primjer_8._1._2_prirucnik
 {
     internal class Ucenik
     {
-        public string ime = "";
+        private string ime = "";
         public string prezime = "";
         public DateTime datumNastanka;
         public int OcjenaIzMatematike = 0;
         public int OcjenaIzEngleskog = 0;
         public int OcjenaIzBiologije = 0;
+
+        public string Ime
+        {
+            get => ime;
+            set => ime = ToUpper.FirstCharToUpper(value);
+        }
 
         public Ucenik()
         {

@@ -155,6 +155,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "primjer 8.1.2 prirucnik", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "probica exception", "probica exception\probica exception.csproj", "{AD2C2D0D-9544-47B2-B9B1-B6DBB19ED305}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "zadaća", "zadaća", "{DA757029-B90B-4E37-B34C-B4724B9989A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zadatak 8.1.1 zbirka zadaca", "zadatak 8.1.1 zbirka zadaca\zadatak 8.1.1 zbirka zadaca.csproj", "{83A5D32C-59F9-404F-AA3D-69FA117449C3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -429,6 +433,10 @@ Global
 		{AD2C2D0D-9544-47B2-B9B1-B6DBB19ED305}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD2C2D0D-9544-47B2-B9B1-B6DBB19ED305}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD2C2D0D-9544-47B2-B9B1-B6DBB19ED305}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83A5D32C-59F9-404F-AA3D-69FA117449C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83A5D32C-59F9-404F-AA3D-69FA117449C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83A5D32C-59F9-404F-AA3D-69FA117449C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83A5D32C-59F9-404F-AA3D-69FA117449C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -501,6 +509,8 @@ Global
 		{53729342-30C9-4B56-AD58-4D185895D9E8} = {85B2258A-23B9-4C6B-AE2D-A316FF40AC62}
 		{9E731F9C-EF9D-47D7-B46D-E0D1671991B3} = {A42CF938-10D0-4C25-8BEE-72910DBFECC8}
 		{AD2C2D0D-9544-47B2-B9B1-B6DBB19ED305} = {A3B3075A-668F-40AA-B6A5-75F348C091E4}
+		{DA757029-B90B-4E37-B34C-B4724B9989A9} = {A42CF938-10D0-4C25-8BEE-72910DBFECC8}
+		{83A5D32C-59F9-404F-AA3D-69FA117449C3} = {DA757029-B90B-4E37-B34C-B4724B9989A9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1EA19B27-98D7-401A-9533-D6EF56F03BBC}
