@@ -87,11 +87,8 @@ namespace zadatak_8._1._3_zbirka_zadaca
             this.Prezime = prezime;
             this.JMBG = jmbg;
         }
-        public Zaposlenik(string ime, string prezime, string jmbg, int bodovi, double vrijednost)
+        public Zaposlenik(string ime, string prezime, string jmbg, int bodovi, double vrijednost) : this(ime, prezime, jmbg)    //   'fall through' metode
         {
-            this.Ime = ime;
-            this.Prezime = prezime;
-            this.JMBG = jmbg;
             this.BrojBodova = bodovi;
             this.VrijednostBoda = vrijednost;
         }
