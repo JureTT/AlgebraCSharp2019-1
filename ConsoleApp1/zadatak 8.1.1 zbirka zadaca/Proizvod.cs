@@ -15,7 +15,7 @@ namespace zadatak_8._1._1_zbirka_zadaca
 
         public Proizvod(string naziv)
         {
-            Naziv = naziv;
+            this.Naziv = naziv;
         }
         public double MPC()
         {

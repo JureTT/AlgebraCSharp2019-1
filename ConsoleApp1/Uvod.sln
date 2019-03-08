@@ -155,9 +155,17 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "primjer 8.1.2 prirucnik", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "probica exception", "probica exception\probica exception.csproj", "{AD2C2D0D-9544-47B2-B9B1-B6DBB19ED305}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "zadaća", "zadaća", "{DA757029-B90B-4E37-B34C-B4724B9989A9}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "treca zadaca", "treca zadaca", "{DA757029-B90B-4E37-B34C-B4724B9989A9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zadatak 8.1.1 zbirka zadaca", "zadatak 8.1.1 zbirka zadaca\zadatak 8.1.1 zbirka zadaca.csproj", "{83A5D32C-59F9-404F-AA3D-69FA117449C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zadatak 8.1.2 zbirka zadaca", "zadatak 8.1.2 zbirka zadaca\zadatak 8.1.2 zbirka zadaca.csproj", "{204CF242-FFEA-4149-9476-7CB365F0D512}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zadatak 8.1.3 zbirka zadaca", "zadatak 8.1.3 zbirka zadaca\zadatak 8.1.3 zbirka zadaca.csproj", "{4A913277-46B1-4E7B-AAAE-F1BF1AA011A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zadatak 8.2.1 zbirka zadaca", "zadatak 8.2.1 zbirka zadaca\zadatak 8.2.1 zbirka zadaca.csproj", "{B62866E0-E615-4E89-8975-28A458D06EB7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zadatak 8.2.2 zbirka zadaca", "zadatak 8.2.2 zbirka zadaca\zadatak 8.2.2 zbirka zadaca.csproj", "{85FD0CCA-36DC-4DA2-BD6A-32AB40F4FA49}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -437,6 +445,22 @@ Global
 		{83A5D32C-59F9-404F-AA3D-69FA117449C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{83A5D32C-59F9-404F-AA3D-69FA117449C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{83A5D32C-59F9-404F-AA3D-69FA117449C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{204CF242-FFEA-4149-9476-7CB365F0D512}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{204CF242-FFEA-4149-9476-7CB365F0D512}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{204CF242-FFEA-4149-9476-7CB365F0D512}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{204CF242-FFEA-4149-9476-7CB365F0D512}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A913277-46B1-4E7B-AAAE-F1BF1AA011A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A913277-46B1-4E7B-AAAE-F1BF1AA011A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A913277-46B1-4E7B-AAAE-F1BF1AA011A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A913277-46B1-4E7B-AAAE-F1BF1AA011A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B62866E0-E615-4E89-8975-28A458D06EB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B62866E0-E615-4E89-8975-28A458D06EB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B62866E0-E615-4E89-8975-28A458D06EB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B62866E0-E615-4E89-8975-28A458D06EB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85FD0CCA-36DC-4DA2-BD6A-32AB40F4FA49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85FD0CCA-36DC-4DA2-BD6A-32AB40F4FA49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85FD0CCA-36DC-4DA2-BD6A-32AB40F4FA49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85FD0CCA-36DC-4DA2-BD6A-32AB40F4FA49}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -511,6 +535,10 @@ Global
 		{AD2C2D0D-9544-47B2-B9B1-B6DBB19ED305} = {A3B3075A-668F-40AA-B6A5-75F348C091E4}
 		{DA757029-B90B-4E37-B34C-B4724B9989A9} = {A42CF938-10D0-4C25-8BEE-72910DBFECC8}
 		{83A5D32C-59F9-404F-AA3D-69FA117449C3} = {DA757029-B90B-4E37-B34C-B4724B9989A9}
+		{204CF242-FFEA-4149-9476-7CB365F0D512} = {DA757029-B90B-4E37-B34C-B4724B9989A9}
+		{4A913277-46B1-4E7B-AAAE-F1BF1AA011A0} = {DA757029-B90B-4E37-B34C-B4724B9989A9}
+		{B62866E0-E615-4E89-8975-28A458D06EB7} = {DA757029-B90B-4E37-B34C-B4724B9989A9}
+		{85FD0CCA-36DC-4DA2-BD6A-32AB40F4FA49} = {DA757029-B90B-4E37-B34C-B4724B9989A9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1EA19B27-98D7-401A-9533-D6EF56F03BBC}
