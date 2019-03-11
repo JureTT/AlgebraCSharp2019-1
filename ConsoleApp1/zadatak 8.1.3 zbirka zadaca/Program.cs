@@ -23,6 +23,15 @@ namespace zadatak_8._1._3_zbirka_zadaca
             platna.Add(z2);
             platna.Add(z3);
 
+            // drugi način
+            List<Zaposlenik> platna2 = new List<Zaposlenik>();
+            {
+                new Zaposlenik("Jure", "Perić", "1005983300036", 550, 5);
+                new Zaposlenik("Marko", "Marić", "1204975351451");
+                new Zaposlenik("Miro", "Mišić");
+                new Zaposlenik();
+            }
+
             Console.WriteLine("Unestite potrebne podatke kako bi se popunila platna lista za vas i vaše kolege.");
             UnosMetoda(platna[1]);
             UnosMetoda(platna[2]);
