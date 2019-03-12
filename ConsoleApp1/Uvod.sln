@@ -169,6 +169,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zadatak 8.2.2 zbirka zadaca
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "primjer 8.2.2.1 prirucnik", "primjer 8.2.2.1 prirucnik\primjer 8.2.2.1 prirucnik.csproj", "{777818ED-9C10-42BF-BDDA-E8A191F0AA11}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "primjer 8.2.2.2 prirucnik", "primjer 8.2.2.2 prirucnik\primjer 8.2.2.2 prirucnik.csproj", "{9EB0613A-18E8-42E2-AB44-91B31B9EAE84}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -467,6 +469,10 @@ Global
 		{777818ED-9C10-42BF-BDDA-E8A191F0AA11}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{777818ED-9C10-42BF-BDDA-E8A191F0AA11}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{777818ED-9C10-42BF-BDDA-E8A191F0AA11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EB0613A-18E8-42E2-AB44-91B31B9EAE84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EB0613A-18E8-42E2-AB44-91B31B9EAE84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EB0613A-18E8-42E2-AB44-91B31B9EAE84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EB0613A-18E8-42E2-AB44-91B31B9EAE84}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -546,6 +552,7 @@ Global
 		{B62866E0-E615-4E89-8975-28A458D06EB7} = {DA757029-B90B-4E37-B34C-B4724B9989A9}
 		{85FD0CCA-36DC-4DA2-BD6A-32AB40F4FA49} = {DA757029-B90B-4E37-B34C-B4724B9989A9}
 		{777818ED-9C10-42BF-BDDA-E8A191F0AA11} = {A42CF938-10D0-4C25-8BEE-72910DBFECC8}
+		{9EB0613A-18E8-42E2-AB44-91B31B9EAE84} = {A42CF938-10D0-4C25-8BEE-72910DBFECC8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1EA19B27-98D7-401A-9533-D6EF56F03BBC}
