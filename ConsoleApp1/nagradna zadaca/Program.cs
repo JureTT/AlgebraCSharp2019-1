@@ -27,7 +27,8 @@ namespace nagradna_zadaca
                         
             List<Ucenik> ucenici = new List<Ucenik>() { u1, u2, u3 };
 
-            ucenici.ForEach(Ucenik => UnesiTelefon(Ucenik));
+            Console.WriteLine("U programu su evidentirana tri učenika, unesite za svakog od njih broj telefona.");
+            ucenici.ForEach(Ucenik =>UnesiTelefon(Ucenik));
 
             foreach (var djak in ucenici)
             {
