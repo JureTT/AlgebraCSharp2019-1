@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace zadatak_8._2._1_zbirka_zadaca
 {
-    class Matika
+    public class Matika
     {
 
         public static double Zbroj(double broj1, double broj2)
@@ -26,7 +26,7 @@ namespace zadatak_8._2._1_zbirka_zadaca
         }
         public static double ToFahren(double celzij)
         {
-            double fahren = (double)(9 / 5) * celzij + 32;
+            double fahren = ((double)9 / 5) * celzij + 32;
             return fahren;
         }
     }

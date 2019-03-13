@@ -173,6 +173,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "primjer 8.2.2.2 prirucnik",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "primjer 8.3.1 prirucnik", "primjer 8.3.1 prirucnik\primjer 8.3.1 prirucnik.csproj", "{C8D666EC-84BF-4F8E-9CF7-9D502AF7CB1A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zadatak 8.2.1 zbirka zadacaTests", "zadatak 8.2.1 zbirka zadacaTests\zadatak 8.2.1 zbirka zadacaTests.csproj", "{1722F3E4-117E-441A-B273-6726A9EE6A83}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -479,6 +481,10 @@ Global
 		{C8D666EC-84BF-4F8E-9CF7-9D502AF7CB1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8D666EC-84BF-4F8E-9CF7-9D502AF7CB1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8D666EC-84BF-4F8E-9CF7-9D502AF7CB1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1722F3E4-117E-441A-B273-6726A9EE6A83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1722F3E4-117E-441A-B273-6726A9EE6A83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1722F3E4-117E-441A-B273-6726A9EE6A83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1722F3E4-117E-441A-B273-6726A9EE6A83}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

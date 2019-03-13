@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace zadatak_8._2._1_zbirka_zadaca
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
