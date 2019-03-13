@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace zadatak_8._1._2_zbirka_zadaca
 {
-    class Automobil
+    public class Automobil
     {
         public string MarkaAutomobila = "";
         public double KS = 0;

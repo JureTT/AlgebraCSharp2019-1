@@ -33,6 +33,7 @@ namespace zadatak_8._2._1_zbirka_zadaca.Tests
             Assert.AreEqual(2, Matika.Udaljenost(0, 0, 0, 2));
             Assert.AreEqual(2, Matika.Udaljenost(1, 1, 1, 3));
             Assert.AreEqual((2.82842712474619).ToString("F6"), (Matika.Udaljenost(2, 4, 4, 6)).ToString("F6"));
+            Assert.AreEqual((199.740063125653).ToString("F6"), (Matika.Udaljenost(0.0005, 0.26, 0.1593, 200)).ToString("F6"));    // testiranje ekstrema (pokriva ekstremne mogućnosti)
             Assert.AreNotEqual(2, Matika.Udaljenost(1, 1, 3, 3));
             //Assert.Fail();
         }

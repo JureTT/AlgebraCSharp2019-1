@@ -12,12 +12,6 @@ namespace primjer_8._3._1_prirucnik
         public int OcjenaIzEngleskog = 0;
         public int OcjenaIzBiologije = 0;
 
-        public string Ime
-        {
-            get => ime;
-            set => ime = ToUpper.FirstCharToUpper(value);
-        }
-
         public Ucenik()
         {
             this.datumNastanka = DateTime.Now;
@@ -27,10 +21,9 @@ namespace primjer_8._3._1_prirucnik
         {
             this.ime = ime;
         }
-        public Ucenik(string ime, string prez) : this.Ime()
+        public Ucenik(string ime, string prezime) : this(ime)
         {
-            this.ime = ime;
-            this.prezime = prez;
+            this.prezime = prezime;
         }  
 
         internal double Prosjek()

@@ -55,6 +55,7 @@
     <ProjectReference Include="..\primjer 8.1.2 prirucnik\primjer 8.1.2 prirucnik.csproj">
       <Project>{9E731F9C-EF9D-47D7-B46D-E0D1671991B3}</Project>
       <Name>primjer 8.1.2 prirucnik</Name>
+      <Private>True</Private>
     </ProjectReference>
     <ProjectReference Include="..\zadatak 8.1.2 zbirka zadaca\zadatak 8.1.2 zbirka zadaca.csproj">
       <Project>{204cf242-ffea-4149-9476-7cb365f0d512}</Project>

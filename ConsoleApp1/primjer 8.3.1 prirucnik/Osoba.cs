@@ -4,7 +4,7 @@ namespace primjer_8._3._1_prirucnik
 {
     public abstract class Osoba
     {
-        private string ime = "";
+        public string ime = "";
         public string prezime = "";
         public DateTime datumNastanka;
         public Osoba()
