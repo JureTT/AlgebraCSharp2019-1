@@ -175,6 +175,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "primjer 8.3.1 prirucnik", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zadatak 8.2.1 zbirka zadacaTests", "zadatak 8.2.1 zbirka zadacaTests\zadatak 8.2.1 zbirka zadacaTests.csproj", "{1722F3E4-117E-441A-B273-6726A9EE6A83}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuisnessLayer", "BuisnessLayer\BuisnessLayer.csproj", "{D845695E-D435-4542-89FC-78C6C7439782}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "primjer 8.5.1 prirucnik", "primjer 8.5.1 prirucnik\primjer 8.5.1 prirucnik.csproj", "{A448121A-D8DB-48B6-A5F4-104D497673AA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -485,6 +489,14 @@ Global
 		{1722F3E4-117E-441A-B273-6726A9EE6A83}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1722F3E4-117E-441A-B273-6726A9EE6A83}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1722F3E4-117E-441A-B273-6726A9EE6A83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D845695E-D435-4542-89FC-78C6C7439782}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D845695E-D435-4542-89FC-78C6C7439782}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D845695E-D435-4542-89FC-78C6C7439782}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D845695E-D435-4542-89FC-78C6C7439782}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A448121A-D8DB-48B6-A5F4-104D497673AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A448121A-D8DB-48B6-A5F4-104D497673AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A448121A-D8DB-48B6-A5F4-104D497673AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A448121A-D8DB-48B6-A5F4-104D497673AA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -566,6 +578,8 @@ Global
 		{777818ED-9C10-42BF-BDDA-E8A191F0AA11} = {A42CF938-10D0-4C25-8BEE-72910DBFECC8}
 		{9EB0613A-18E8-42E2-AB44-91B31B9EAE84} = {A42CF938-10D0-4C25-8BEE-72910DBFECC8}
 		{C8D666EC-84BF-4F8E-9CF7-9D502AF7CB1A} = {A42CF938-10D0-4C25-8BEE-72910DBFECC8}
+		{D845695E-D435-4542-89FC-78C6C7439782} = {A42CF938-10D0-4C25-8BEE-72910DBFECC8}
+		{A448121A-D8DB-48B6-A5F4-104D497673AA} = {A42CF938-10D0-4C25-8BEE-72910DBFECC8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1EA19B27-98D7-401A-9533-D6EF56F03BBC}
