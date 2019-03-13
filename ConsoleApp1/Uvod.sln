@@ -179,6 +179,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuisnessLayer", "BuisnessLa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "primjer 8.5.1 prirucnik", "primjer 8.5.1 prirucnik\primjer 8.5.1 prirucnik.csproj", "{A448121A-D8DB-48B6-A5F4-104D497673AA}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "9.1. Rad s tekstom", "9.1. Rad s tekstom", "{BD7E03A8-954C-40E8-AABF-EFEA32F6A067}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zadatci 9.1.1 - 9.1.7 zbirka (manipulacija)", "zadatci 9.1.1 - 9.1.7 zbirka (manipulacija)\zadatci 9.1.1 - 9.1.7 zbirka (manipulacija).csproj", "{26FE492F-ACD0-49F7-B9B8-62437C8C98E6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -497,6 +501,10 @@ Global
 		{A448121A-D8DB-48B6-A5F4-104D497673AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A448121A-D8DB-48B6-A5F4-104D497673AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A448121A-D8DB-48B6-A5F4-104D497673AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26FE492F-ACD0-49F7-B9B8-62437C8C98E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26FE492F-ACD0-49F7-B9B8-62437C8C98E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26FE492F-ACD0-49F7-B9B8-62437C8C98E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26FE492F-ACD0-49F7-B9B8-62437C8C98E6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -580,6 +588,7 @@ Global
 		{C8D666EC-84BF-4F8E-9CF7-9D502AF7CB1A} = {A42CF938-10D0-4C25-8BEE-72910DBFECC8}
 		{D845695E-D435-4542-89FC-78C6C7439782} = {A42CF938-10D0-4C25-8BEE-72910DBFECC8}
 		{A448121A-D8DB-48B6-A5F4-104D497673AA} = {A42CF938-10D0-4C25-8BEE-72910DBFECC8}
+		{26FE492F-ACD0-49F7-B9B8-62437C8C98E6} = {BD7E03A8-954C-40E8-AABF-EFEA32F6A067}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1EA19B27-98D7-401A-9533-D6EF56F03BBC}
