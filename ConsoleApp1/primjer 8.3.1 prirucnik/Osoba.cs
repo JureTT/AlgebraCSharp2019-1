@@ -1,4 +1,5 @@
-﻿using System;
+﻿using primjer_8._1._2_prirucnik;
+using System;
 
 namespace primjer_8._3._1_prirucnik
 {
@@ -17,9 +18,9 @@ namespace primjer_8._3._1_prirucnik
         public Osoba()
         {
             this.datumNastanka = DateTime.Now;
-            Console.WriteLine("Pozvana metoda Osoba:Osoba()");
+            Console.WriteLine("Pozvana metoda Osoba: Osoba()");
         }
-        protected Osoba(string ime, string prezime  )
+        protected Osoba(string ime, string prezime)
         {
             this.ime = ime;
             this.prezime = prezime;
