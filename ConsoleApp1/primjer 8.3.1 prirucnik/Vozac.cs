@@ -30,9 +30,9 @@ namespace primjer_8._3._1_prirucnik
     }
         public override string ToString()
         {
-            string opis = "Ja sam vozač i moje ime je" + this.ime;
+            string opis = "Ja sam vozač i moje ime je " + this.Ime;
 
-            if (Automobili.Count != 0)   // možda ide "automobili"
+            if (Automobili.Count != 0)   
             {
                 opis += "\n Imam sljedeće automobile:";
                 foreach (var item in Automobili)

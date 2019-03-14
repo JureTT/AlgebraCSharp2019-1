@@ -42,9 +42,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ispit.cs" />
+    <Compile Include="IUcenik.cs" />
     <Compile Include="Osoba.cs" />
+    <Compile Include="Pilot.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Studenti.cs" />
     <Compile Include="Ucenik.cs" />
     <Compile Include="Vozac.cs" />
   </ItemGroup>
