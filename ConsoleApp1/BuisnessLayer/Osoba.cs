@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace primjer_8._3._1_prirucnik
+namespace BuisnessLayer
 {
     public abstract class Osoba
     {

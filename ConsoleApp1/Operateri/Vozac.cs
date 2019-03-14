@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using zadatak_8._1._2_zbirka_zadaca;
+using BuisnessLayer;
 
-namespace BuisnessLayer
+namespace Operateri
 {
-    class Vozac:Osoba
+    public class Vozac:Osoba
     {
         bool kategorija_a = false;
         bool kategorija_b = false;
@@ -30,9 +30,9 @@ namespace BuisnessLayer
     }
         public override string ToString()
         {
-            string opis = "Ja sam vozač i moje ime je" + this.ime;
+            string opis = "Ja sam vozač i moje ime je " + this.Ime;
 
-            if (Automobili.Count != 0)   // možda ide "automobili"
+            if (Automobili.Count != 0)   
             {
                 opis += "\n Imam sljedeće automobile:";
                 foreach (var item in Automobili)

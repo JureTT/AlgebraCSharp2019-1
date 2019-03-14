@@ -4,13 +4,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D845695E-D435-4542-89FC-78C6C7439782}</ProjectGuid>
+    <ProjectGuid>{2AF5613C-A25F-4F34-8457-73DBF9A57319}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BuisnessLayer</RootNamespace>
-    <AssemblyName>BuisnessLayer</AssemblyName>
+    <RootNamespace>Operateri</RootNamespace>
+    <AssemblyName>Operateri</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -40,14 +41,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Automobil.cs" />
-    <Compile Include="Ispit.cs" />
-    <Compile Include="IUcenik.cs" />
-    <Compile Include="Osoba.cs" />
+    <Compile Include="Pilot.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Studenti.cs" />
-    <Compile Include="ToUpper.cs" />
-    <Compile Include="Ucenik.cs" />
+    <Compile Include="Vozac.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BuisnessLayer\BuisnessLayer.csproj">
+      <Project>{d845695e-d435-4542-89fc-78c6c7439782}</Project>
+      <Name>BuisnessLayer</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

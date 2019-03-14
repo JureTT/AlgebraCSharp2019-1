@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace BuisnessLayer
 {
-    public class Class1
+    public interface IUcenik
     {
+        double Prosjek();
+        string ToString();
+        void PrijaviIspit(Ispit ispit);
     }
 }
