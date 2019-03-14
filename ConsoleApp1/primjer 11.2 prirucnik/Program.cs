@@ -13,6 +13,7 @@ namespace primjer_11._2_prirucnik
         {
             Ucenik uc1 = new Ucenik("Maja", "Majić");
             List<Osoba> osobe = new List<Osoba>();
+
         }
     }
 }
