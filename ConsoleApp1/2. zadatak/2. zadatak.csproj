@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1A449B30-48CE-459E-A06A-A573CA0D2D01}</ProjectGuid>
+    <ProjectGuid>{3CBA71AA-B69E-4BAE-8488-02EE3672E1D5}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>primjer_14._1._1_prirucnik</RootNamespace>
-    <AssemblyName>primjer 14.1.1 prirucnik</AssemblyName>
+    <RootNamespace>_2.zadatak</RootNamespace>
+    <AssemblyName>_2.zadatak</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

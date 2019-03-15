@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1A449B30-48CE-459E-A06A-A573CA0D2D01}</ProjectGuid>
+    <ProjectGuid>{5441F044-2C5B-4C69-B0CD-5487BFCA8D12}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>primjer_14._1._1_prirucnik</RootNamespace>
-    <AssemblyName>primjer 14.1.1 prirucnik</AssemblyName>
+    <RootNamespace>_3.zadatak</RootNamespace>
+    <AssemblyName>_3.zadatak</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Automobil.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
