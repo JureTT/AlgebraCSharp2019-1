@@ -21,5 +21,22 @@ namespace _3.zadatak
             int godine = DateTime.Now.Year - GodinaPRoizvodnje;
             return godine;
         }
+        public double UkupnaCijena()
+        {
+            double cijena = 0;
+            if (this. OsnovnaCijena <= 70000)
+            {
+                cijena = OsnovnaCijena * 1.3;
+            }
+            else if (this.OsnovnaCijena < 100000)
+            {
+                cijena = OsnovnaCijena * 1.4;
+            }
+            else
+            {
+                cijena = OsnovnaCijena * 1.5;
+            }
+            return cijena;
+        }
     }
 }
