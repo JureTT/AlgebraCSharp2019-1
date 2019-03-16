@@ -15,7 +15,7 @@ namespace primjer_6._2._2___Petlja_Foreach__primjer_iz_knjige_
             Console.WriteLine("Unosimo nekoliko različitih tipova.");
 
             arr.Add(3);
-            arr.Add(6);
+            arr.Add(true);
             arr.Add(9);
             arr.Add("jedenaest");
             arr.Add(13);
@@ -27,7 +27,7 @@ namespace primjer_6._2._2___Petlja_Foreach__primjer_iz_knjige_
                 {
                     Console.WriteLine(int.Parse(arr[i].ToString()));
                 }
-                catch(FormatException fex)
+                catch
                 {
                     Console.WriteLine("Varijabla nije u formatu koji se pretvoriti u int.");
                 }

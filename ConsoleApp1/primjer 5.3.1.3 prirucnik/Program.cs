@@ -17,7 +17,7 @@ namespace primjer_5._3._1._3_prirucnik
             {
                 for (int j = 1; j <= 10; j++)
                 {
-                    Console.Write("{0}\t", i * j );
+                    Console.Write("{0} * {1} = {2}\t", i, j, i * j );
                 }
                 Console.WriteLine("");
             }

@@ -11,7 +11,7 @@ namespace Primjer_6._1._1
         static void Main(string[] args)
         {
             //deklaracija
-            int?[] niz = new int?[3];
+            int?[] niz = new int?[3];       // upitnik ?  je dodan kako bi vrijedosti u nizu, int-ovi, mogli biti null
 
             // inicijalizacija
             niz[0] = 55;

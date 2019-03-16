@@ -48,7 +48,7 @@ namespace zadatci_9._1._1___9._1._7_zbirka__manipulacija_
                 Console.WriteLine(nizrijeci[i]); 
             }
 
-            Console.WriteLine("9.1.3 Brojač riječi u novi red");
+            Console.WriteLine("9.1.4 Brojač riječi u novi red");
             
             Console.WriteLine("Rečenica '{0}' ima {1} riječi", recenica, nizrijeci.Count(x => x != " "));
 

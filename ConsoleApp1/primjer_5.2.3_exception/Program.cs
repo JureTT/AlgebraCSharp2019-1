@@ -28,14 +28,14 @@ namespace primjer_5._2._3_exception
                 }
 
             }
-            catch (FormatException fex)
+            catch (FormatException fex)         // hvata grešku formata
             {
                 Console.WriteLine("GREŠKA, nije unešen numerički znak: "
                     + fex.Message
                     + "\n"
                     + fex.ToString());
             }
-            catch (Exception ex)
+            catch (Exception ex)                // hvata općenito grešku
             {
                 Console.WriteLine("GREŠKA, generička: " + ex.Message + ex.ToString());
             }
