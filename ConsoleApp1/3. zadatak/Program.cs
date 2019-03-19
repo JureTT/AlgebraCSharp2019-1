@@ -23,6 +23,7 @@ namespace _3.zadatak
                  auto.GodinaPRoizvodnje, auto.Starost(), auto.UkupnaCijena(), auto.OsnovnaCijena);
 
             Console.ReadKey();
+
         }
     }
 }
