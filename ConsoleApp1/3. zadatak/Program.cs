@@ -19,8 +19,10 @@ namespace _3.zadatak
             Console.WriteLine("Unesite osnovnu cijenu:");
             auto.OsnovnaCijena = double.Parse(Console.ReadLine());
 
-            Console.WriteLine("Vaše vozilo se zove {0}, proizvedeno je godine {1} i staro je {2} godina, te ukupno košta {3} na osnovnu cijenu od {4} kuna.", auto.Naziv,
+            Console.WriteLine("Vaše vozilo se zove {0}, proizvedeno je godine {1} i staro je {2} godina,\n te ukupno košta {3} na osnovnu cijenu od {4} kuna.", auto.Naziv,
                  auto.GodinaPRoizvodnje, auto.Starost(), auto.UkupnaCijena(), auto.OsnovnaCijena);
+
+            Console.ReadKey();
         }
     }
 }
