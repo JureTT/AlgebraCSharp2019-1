@@ -20,6 +20,34 @@ namespace zadatak_5._3._6_zbirka_zadaca
                 }
             }
 
+            int godina = 0;
+            bool katch = true;
+            while (katch == true)
+            {
+                try
+                {
+                    Console.WriteLine("\nUnesi godinu za koju bi htio provjeriti dal je prijestupna:");
+                    godina = int.Parse(Console.ReadLine());
+                    katch = false;
+                }
+                catch // da li dodati Exception?
+                {
+                    Console.WriteLine("Greška pri unosu, molimo pokušajte ponovo");
+                    katch = true;
+                }
+                
+            }
+
+
+            if (godina % 4 == 0 && (!(godina % 100 == 0) || (godina % 400 == 0)))
+            {
+                Console.WriteLine("Unešena godina je prijstupna.");
+            }
+            else
+            {
+                Console.WriteLine("Unešena godina nije prijestupna.");
+            }
+
             Console.ReadKey();
         }
     }

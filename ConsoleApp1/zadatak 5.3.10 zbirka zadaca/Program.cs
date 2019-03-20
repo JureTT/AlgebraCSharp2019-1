@@ -12,8 +12,22 @@ namespace zadatak_5._3._10_zbirka_zadaca
         {
             Console.WriteLine("Program za provjeru savršenih brojeva.");
 
-            Console.WriteLine("Unesi jedan broj:");
-            int a = int.Parse(Console.ReadLine());
+            int a = 0;
+            bool greska = true;
+            while (greska == true)
+            {
+                try
+                {
+                    Console.WriteLine("Unesi jedan broj:");
+                    a = int.Parse(Console.ReadLine());
+                    greska = false;
+                }
+                catch (Exception exp)
+                {
+                    Console.WriteLine(exp.Message);
+                    greska = true;
+                }
+            }
 
             int savrs = 0;
             for (int i = 1; i < a; i++)
