@@ -1,154 +1,154 @@
 --zadatak 3.2 zbirka
-USE Fakultet
+USE Fakultet;
 SELECT imeNastavnik, prezNastavnik
-FROM nastavnik
-GO
+FROM nastavnik;
+GO;
 --zadatak 3.2 zbirka (drugi nacin)
-USE Fakultet
+USE Fakultet;
 SELECT imeNastavnik AS ime, prezNastavnik AS prezime
-FROM nastavnik
-GO
+FROM nastavnik;
+GO;
 --zadatak 3.3 zbirka
-USE Fakultet
+USE Fakultet;
 SELECT mbrStud, imeStud + ' ' + prezStud AS 'Ime i prezime'
-FROM stud
-GO
+FROM stud;
+GO;
 --zadatak 3.3 zbirka (dodatak)
-USE Fakultet
+USE Fakultet;
 SELECT mbrStud AS 'Redni broj', imeStud + ' ' + prezStud AS 'Ime i prezime'
-FROM stud
-GO
+FROM stud;
+GO;
 --zadatak 3.4 zbirka
-USE Fakultet
+USE Fakultet;
 SELECT DISTINCT imeStud FROM stud
-ORDER BY imeStud DESC
-GO
+ORDER BY imeStud DESC;
+GO;
 --zadatak 3.4 zbirka (drugi nacin)
-USE Fakultet
+USE Fakultet;
 SELECT	imeStud FROM stud
 GROUP BY imeStud
-ORDER BY imeStud DESC
-GO
+ORDER BY imeStud DESC;
+GO;
 --zadatak 3.4 zbirka (izmjena)
-USE Fakultet
+USE Fakultet;
 SELECT DISTINCT imeStud AS 'Ime studenta' FROM stud
-ORDER BY imeStud ASC
-GO
+ORDER BY imeStud ASC;
+GO;
 --zadatak 3.5 zbirka 
-USE Fakultet
+USE Fakultet;
 SELECT mbrStud FROM ispit
-WHERE sifPred = 146
-GO
+WHERE sifPred = 146;
+GO;
 --zadatak 3.5 zbirka (dodatak)
-USE Fakultet
+USE Fakultet;
 SELECT mbrStud AS'Redni broj'
 , ocjena
 , datIspit
  FROM ispit
-WHERE sifPred = 146
-GO
+WHERE sifPred = 146;
+GO;
 --zadatak 3.6 zbirka 
-USE Fakultet
+USE Fakultet;
 SELECT imeNastavnik,
 prezNastavnik,
 (koef + 0.4) * 800 AS 'Plaæa'
-FROM nastavnik
-GO
+FROM nastavnik;
+GO;
 --zadatak 3.6 zbirka (dodatak)
-USE Fakultet
+USE Fakultet;
 SELECT imeNastavnik + ' ' + prezNastavnik AS 'Ime i prezime',
 (koef + 0.4) * 800 AS 'Plaæa'
-FROM nastavnik
-GO
+FROM nastavnik;
+GO;
 --zadatak 3.7 zbirka 
-USE Fakultet
+USE Fakultet;
 SELECT imeNastavnik,
 prezNastavnik,
 (koef + 0.4) * 800 AS 'Plaæa'
 FROM nastavnik
-WHERE ((koef + 0.4) * 800) < 3500 OR ((koef + 0.4) * 800) > 8000
-GO
+WHERE ((koef + 0.4) * 800) < 3500 OR ((koef + 0.4) * 800) > 8000;
+GO;
 --zadatak 3.7 zbirka (dodatak) 
-USE Fakultet
+USE Fakultet;
 SELECT imeNastavnik AS Ime,
 prezNastavnik AS Prezime,
 (koef + 0.4) * 800 AS 'Plaæa'
 FROM nastavnik
-WHERE ((koef + 0.4) * 800) > 3500 AND ((koef + 0.4) * 800) < 8000
-GO
+WHERE ((koef + 0.4) * 800) > 3500 AND ((koef + 0.4) * 800) < 8000;
+GO;
 --zadatak 3.8 zbirka 
-USE Fakultet
+USE Fakultet;
 SELECT * FROM stud
-WHERE trim(imeStud) LIKE '[aeiou]%[aeiou]'
-GO
+WHERE trim(imeStud) LIKE '[aeiou]%[aeiou]';
+GO;
 --zadatak 3.8 zbirka 
-USE Fakultet
+USE Fakultet;
 SELECT * FROM stud
-WHERE imeStud LIKE '[aeiou]%'
-GO
+WHERE imeStud LIKE '[aeiou]%';
+GO;
 --zadatak 3.8 zbirka (varijacija na temu)
-USE Fakultet
+USE Fakultet;
 SELECT * FROM stud
-WHERE imeStud LIKE '[aeiou]%' AND prezStud LIKE '[bfjpv]%'
-GO
+WHERE imeStud LIKE '[aeiou]%' AND prezStud LIKE '[bfjpv]%';
+GO;
 --zadatak 3.8 zbirka (varijacija na temu2)
-USE Fakultet
+USE Fakultet;
 SELECT imeStud + ' ' + prezStud AS 'Ime i prezime'
 FROM stud
-WHERE imeStud LIKE '[aeiou]%' AND prezStud LIKE '[cgkrz]%'
-GO
+WHERE imeStud LIKE '[aeiou]%' AND prezStud LIKE '[cgkrz]%';
+GO;
 --zadatak 3.8 zbirka 
-USE Fakultet
+USE Fakultet;
 SELECT * FROM stud
-WHERE trim(imeStud) LIKE '[^aeiou]%[^aeiou]'
-GO
+WHERE trim(imeStud) LIKE '[^aeiou]%[^aeiou]';
+GO;
 --zadatak 3.9 zbirka 
-USE Fakultet
+USE Fakultet;
 SELECT * FROM stud
-WHERE imeStud LIKE '[^aeiou]%'
-GO
+WHERE imeStud LIKE '[^aeiou]%';
+GO;
 --zadatak 3.9 zbirka (varijacija)
-USE Fakultet
+USE Fakultet;
 SELECT * FROM stud
-WHERE imeStud LIKE '[^aeiou]%' AND prezStud LIKE '[^aeiou]%'
-GO
+WHERE imeStud LIKE '[^aeiou]%' AND prezStud LIKE '[^aeiou]%';
+GO;
 --zadatak 3.9 zbirka (varijacija)
-USE Fakultet
+USE Fakultet;
 SELECT * FROM stud
-WHERE prezStud LIKE '[^aeiou]%[^aeiou]'
-GO
+WHERE prezStud LIKE '[^aeiou]%[^aeiou]';
+GO;
 --zadatak 3.9 zbirka (varijacija)
-USE Fakultet
+USE Fakultet;
 SELECT * FROM stud
-WHERE prezStud LIKE 'P%[^aeiou]'
-GO
+WHERE prezStud LIKE 'P%[^aeiou]';
+GO;
 --zadatak 3.10 zbirka 
-USE Fakultet
+USE Fakultet;
 SELECT * FROM stud
-WHERE trim(imeStud) LIKE '[aeiou]%' AND trim(imeStud) LIKE '%[aeiou]'
-GO
+WHERE trim(imeStud) LIKE '[aeiou]%' AND trim(imeStud) LIKE '%[aeiou]';
+GO;
 --zadatak 3.10 zbirka (varijacija)
-USE Fakultet
+USE Fakultet;
 SELECT * FROM stud
-WHERE imeStud LIKE '[^aeiou]%' OR prezStud LIKE '[^aeiou]%'
-GO
+WHERE imeStud LIKE '[^aeiou]%' OR prezStud LIKE '[^aeiou]%';
+GO;
 --zadatak 3.10 zbirka (varijacija)
-USE Fakultet
+USE Fakultet;
 SELECT trim(imeStud) + ' ' + prezStud AS 'Ime i prezime' FROM stud
-WHERE imeStud LIKE '[^aeiou]%' OR prezStud LIKE '[^aeiou]%'
-GO
+WHERE imeStud LIKE '[^aeiou]%' OR prezStud LIKE '[^aeiou]%';
+GO;
 --zadatak 3.11 zbirka
-USE Fakultet
+USE Fakultet;
 SELECT * FROM stud
-WHERE imeStud LIKE '%nk%' OR prezStud LIKE '%nk%'
-GO
+WHERE imeStud LIKE '%nk%' OR prezStud LIKE '%nk%';
+GO;
 --zadatak 3.11 zbirka (varijacija)
-USE Fakultet
+USE Fakultet;
 SELECT * FROM stud
-WHERE imeStud LIKE '%pr%' OR prezStud LIKE '%pr%'
-GO
+WHERE imeStud LIKE '%pr%' OR prezStud LIKE '%pr%';
+GO;
 --zadatak 3.11 zbirka (varijacija)
-USE Fakultet
+USE Fakultet;
 SELECT * FROM stud
-WHERE imeStud LIKE '%st%' OR prezStud LIKE '%st%'
-GO
+WHERE imeStud LIKE '%st%' OR prezStud LIKE '%st%';
+GO;

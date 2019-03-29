@@ -1,128 +1,128 @@
 -- zadatak 3.12 zbirka (rješenje 1)
-USE Fakultet
+USE Fakultet;
 SELECT imeStud, prezStud FROM stud, ispit
 WHERE stud.mbrStud = ispit.mbrStud 
 AND ocjena = 1
-AND (ispit.sifPred BETWEEN 200 AND 240)
-GO
+AND (ispit.sifPred BETWEEN 200 AND 240);
+GO;
 -- zadatak 3.12 zbirka (rješenje 2)
-USE Fakultet
+USE Fakultet;
 SELECT imeStud, prezStud 
 FROM stud JOIN ispit
 ON stud.mbrStud = ispit.mbrStud 
-WHERE ocjena = 1 AND (sifPred BETWEEN 200 AND 240)
-GO
+WHERE ocjena = 1 AND (sifPred BETWEEN 200 AND 240);
+GO;
 -- zadatak 3.13 zbirka 
-USE Fakultet
+USE Fakultet;
 SELECT DISTINCT imeStud, prezStud
 FROM stud JOIN ispit
 ON stud.mbrStud = ispit.mbrStud
-WHERE ocjena = 3  
-GO
+WHERE ocjena = 3;
+GO;
 -- zadatak 3.13 zbirka (riješenje 2)
-USE Fakultet
+USE Fakultet;
 SELECT DISTINCT imeStud, prezStud 
 FROM stud, ispit
-WHERE stud.mbrStud = ispit.mbrStud AND ocjena = 3  
-GO
+WHERE stud.mbrStud = ispit.mbrStud AND ocjena = 3;
+GO;
 -- zadatak 3.14 zbirka 
-USE Fakultet
+USE Fakultet;
 SELECT DISTINCT nazPred
 FROM pred JOIN ispit
-ON pred.sifPred = ispit.sifPred
-GO
+ON pred.sifPred = ispit.sifPred;
+GO;
 -- zadatak 3.14 zbirka (riješenje 2)
-USE Fakultet
+USE Fakultet;
 SELECT DISTINCT nazPred
 FROM pred, ispit
-WHERE pred.sifPred = ispit.sifPred
-GO
+WHERE pred.sifPred = ispit.sifPred;
+GO;
 -- zadatak 3.15 zbirka 
-USE Fakultet
+USE Fakultet;
 SELECT nazPred
 FROM pred LEFT JOIN ispit
 ON ispit.sifPred = pred.sifPred
 WHERE datIspit IS NULL
-ORDER BY nazPred
-GO
+ORDER BY nazPred;
+GO;
 -- zadatak 3.15 zbirka (rješenje 2)
-USE Fakultet
+USE Fakultet;
 SELECT nazPred
 FROM pred
-WHERE nazPred NOT IN (SELECT DISTINCT nazPred FROM pred, ispit WHERE pred.sifPred = ispit.sifPred)
-GO
+WHERE nazPred NOT IN (SELECT DISTINCT nazPred FROM pred, ispit WHERE pred.sifPred = ispit.sifPred);
+GO;
 -- zadatak 3.16 zbirka 
-USE Fakultet
+USE Fakultet;
 SELECT nazPred, oznDvorana
 FROM pred LEFT JOIN rezervacija
 ON pred.sifPred = rezervacija.sifPred
-WHERE brojSatiTjedno > 2
-GO
+WHERE brojSatiTjedno > 2;
+GO;
 -- zadatak 3.16 zbirka (dodatak)
-USE Fakultet
+USE Fakultet;
 SELECT DISTINCT nazPred, oznDvorana
 FROM pred LEFT JOIN rezervacija
 ON pred.sifPred = rezervacija.sifPred
-WHERE brojSatiTjedno > 2 AND oznDvorana is not NULL
-GO
+WHERE brojSatiTjedno > 2 AND oznDvorana is not NULL;
+GO;
 -- zadatak 3.17 zbirka 
-USE Fakultet
+USE Fakultet;
 SELECT nazPred, nazOrgJed, upisanoStud
 FROM pred JOIN orgJed
 ON pred.sifOrgjed = orgjed.sifOrgjed
-WHERE upisanoStud > 20
-GO
+WHERE upisanoStud > 20;
+GO;
 -- zadatak 3.18 zbirka 
-USE Fakultet
+USE Fakultet;
 SELECT DISTINCT nazMjesto
 FROM mjesto JOIN stud
-ON mjesto.pbr = stud.pbrStan
-GO
+ON mjesto.pbr = stud.pbrStan;
+GO;
 -- zadatak 3.18 zbirka (varijanta)
-USE Fakultet
+USE Fakultet;
 SELECT DISTINCT nazMjesto
 FROM mjesto, stud
-WHERE mjesto.pbr = stud.pbrStan
-GO
+WHERE mjesto.pbr = stud.pbrStan;
+GO;
 -- zadatak 3.19 zbirka
-USE Fakultet
+USE Fakultet;
 SELECT imeStud, prezStud, nazPred, ocjena
 FROM ispit i
 JOIN stud s ON i.mbrStud = s.mbrStud
-JOIN pred p ON i.sifPred = p.sifPred 
-GO
+JOIN pred p ON i.sifPred = p.sifPred;
+GO;
 -- zadatak 3.19 zbirka (duža varijanta, lošija)
-USE Fakultet
+USE Fakultet;
 SELECT imeStud, prezStud, nazPred, ocjena
-FROM ispit JOIN stud ON ispit.mbrStud = stud.mbrStud JOIN pred ON ispit.sifPred = pred.sifPred 
-GO
+FROM ispit JOIN stud ON ispit.mbrStud = stud.mbrStud JOIN pred ON ispit.sifPred = pred.sifPred;
+GO;
 -- zadatak 3.20 zbirka
-USE Fakultet
+USE Fakultet;
 SELECT nazPred, oznDvorana, nazOrgjed
 FROM pred JOIN rezervacija
 ON pred.sifPred = rezervacija.sifPred
-JOIN orgJed ON orgjed.sifOrgjed = pred.sifOrgjed
-GO
+JOIN orgJed ON orgjed.sifOrgjed = pred.sifOrgjed;
+GO;
 -- zadatak 3.21 zbirka
-USE Fakultet
+USE Fakultet;
 SELECT imeStud, prezStud, nazMjesto
 FROM stud
 JOIN mjesto ON mjesto.pbr = stud.pbrStan
 JOIN ispit ON stud.mbrStud =  ispit.mbrStud
 JOIN pred ON pred.sifPred = ispit.sifPred
-WHERE nazPred = 'Osnove baza podataka' AND ocjena = 1
-GO
+WHERE nazPred = 'Osnove baza podataka' AND ocjena = 1;
+GO;
 -- zadatak 3.21 zbirka (varijanta sa skraæenicama)
-USE Fakultet
+USE Fakultet;
 SELECT imeStud, prezStud, nazMjesto
 FROM stud s
 JOIN mjesto m ON m.pbr = s.pbrStan
 JOIN ispit i ON s.mbrStud = i.mbrStud
 JOIN pred p ON p.sifPred = i.sifPred
-WHERE nazPred = 'Osnove baza podataka' AND ocjena = 1
-GO
+WHERE nazPred = 'Osnove baza podataka' AND ocjena = 1;
+GO;
 -- zadatak 3.22 zbirka
-USE Fakultet
+USE Fakultet;
 SELECT imeNastavnik, prezNastavnik, nazMjesto, nazZupanija, nazPred, ocjena
 FROM nastavnik
 JOIN mjesto ON mjesto.pbr = nastavnik.pbrStan
@@ -130,10 +130,10 @@ JOIN zupanija ON zupanija.sifZupanija = mjesto.sifZupanija
 JOIN ispit ON ispit.sifNastavnik = nastavnik.sifNastavnik
 JOIN pred ON pred.sifPred = ispit.sifPred
 WHERE ocjena = 2 OR ocjena = 3
-ORDER BY nazPred
-GO
+ORDER BY nazPred;
+GO;
 -- zadatak 3.23 zbirka
-USE Fakultet
+USE Fakultet;
 SELECT imeStud, prezStud
 	, m.nazMjesto AS 'Mjesto roðenja'
 	, z.nazZupanija AS 'Županija roðenja'
@@ -143,42 +143,42 @@ FROM stud s
 JOIN mjesto m ON m.pbr = s.pbrRod
 JOIN zupanija z ON z.sifZupanija = m.sifZupanija
 JOIN mjesto m2 ON s.pbrStan = m2.pbr
-JOIN zupanija z2 ON z2.sifZupanija = m2.sifZupanija
-GO
+JOIN zupanija z2 ON z2.sifZupanija = m2.sifZupanija;
+GO;
 -- zadatak 3.24 zbirka
-USE Fakultet
+USE Fakultet;
 SELECT DISTINCT nazMjesto
 FROM mjesto JOIN stud
 ON mjesto.pbr =  stud.pbrStan
-WHERE pbrStan = pbrRod
-GO
+WHERE pbrStan = pbrRod;
+GO;
 -- zadatak 3.25 zbirka
-USE Fakultet
+USE Fakultet;
 SELECT DISTINCT imeNastavnik, prezNastavnik
 FROM nastavnik
 JOIN ispit ON ispit.sifNastavnik = nastavnik.sifNastavnik
 JOIN stud ON ispit.mbrStud = stud.mbrStud
 JOIN mjesto m1 ON m1.pbr = stud.pbrStan
 JOIN mjesto m2 ON m2.pbr = nastavnik.pbrStan
-WHERE m1.sifZupanija = m2.sifZupanija
-GO
+WHERE m1.sifZupanija = m2.sifZupanija;
+GO;
 -- zadatak 3.26 zbirka (promjenica)
-USE Fakultet
+USE Fakultet;
 SELECT imeStud, prezStud
 FROM stud s
 JOIN mjesto m1 ON s.pbrRod = m1.pbr
 JOIN mjesto m2 ON s.pbrRod = m2.pbr
-WHERE pbrRod != pbrStan AND m1.sifZupanija = m2.sifZupanija
-GO
+WHERE pbrRod != pbrStan AND m1.sifZupanija = m2.sifZupanija;
+GO;
 -- zadatak 3.27 zbirka
-USE Fakultet
+USE Fakultet;
 SELECT stud.*, nastavnik.*
 FROM stud, nastavnik
-WHERE stud.prezStud = nastavnik.prezNastavnik
-GO
+WHERE stud.prezStud = nastavnik.prezNastavnik;
+GO;
 -- zadatak 3.27 zbrika (variajacija)
-USE Fakultet
+USE Fakultet;
 SELECT *
 FROM stud s CROSS JOIN nastavnik n
-WHERE s.prezStud = n.prezNastavnik
-GO
+WHERE s.prezStud = n.prezNastavnik;
+GO;

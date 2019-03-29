@@ -1,0 +1,394 @@
+CREATE DATABASE zaposlenici;
+GO;
+
+USE zaposlenici;
+GO;
+
+CREATE TABLE odjeli(
+	id INT NOT NULL PRIMARY KEY
+	, naziv NVARCHAR(50) NOT NULL
+	, lokacija NVARCHAR(50) NOT NULL
+);
+GO;
+
+CREATE TABLE zaposlenici(
+	id BIGINT NOT NULL PRIMARY KEY
+	, ime  NVARCHAR(50) NOT NULL
+	, prezime NVARCHAR(50) NOT NULL
+	, id_odjela INT NOT NULL REFERENCES odjeli(id)
+);
+GO;
+
+CREATE TABLE sefovi(
+	id_zaposlenika BIGINT FOREIGN KEY REFERENCES zaposlenici(id)
+	, id_odjela INT REFERENCES odjeli(id)
+	, CONSTRAINT PK_idevi PRIMARY KEY (id_zaposlenika, id_odjela)
+);
+GO;
+
+--USE upisi;
+--DROP DATABASE zaposlenici;
+--GO;
+
+CREATE DATABASE skladista;
+GO;
+
+USE skladista;
+GO;
+
+CREATE TABLE skladisna_mjesta(
+	id INT NOT NULL PRIMARY KEY
+	, naziv NCHAR(30)
+	, mjesto NCHAR(20)
+);
+GO;
+
+CREATE TABLE radnici(
+	id INT NOT NULL PRIMARY KEY
+	, ime NCHAR (30)
+	, prezime NCHAR (30)
+	, id_skladisnog_mjesta INT FOREIGN KEY REFERENCES skladisna_mjesta(id)
+);
+GO;
+
+CREATE TABLE proizvodi(
+	id INT NOT NULL PRIMARY KEY
+	, naziv NCHAR(30)
+	, id_skladisnog_mjesta INT FOREIGN KEY REFERENCES skladisna_mjesta(id)
+);
+GO;
+
+CREATE TABLE voditelji(
+	id_radnika INT NOT NULL FOREIGN KEY REFERENCES radnici(id)
+	, id_skladisnog_mjesta INT NOT NULL FOREIGN KEY REFERENCES skladisna_mjesta(id)
+	, CONSTRAINT PK_idevi PRIMARY KEY (id_radnika, id_skladisnog_mjesta)
+);
+GO;
+
+--USE master;
+--DROP DATABASE skladista;
+--GO;
+
+CREATE DATABASE videoteke;
+GO;
+
+--DROP TABLE filmovi;				-- morao si obrisati tablice koje su unešene u krivu bazu
+--DROP TABLE zanri;
+--DROP TABLE cijene;
+--DROP TABLE clanovi;
+--GO;
+
+USE videoteke;      --  zaboravio si umentnuti ovu liniju koda (da se koristi baza koja je trenutno stvorena)
+GO;				   --  pa je onda program stavio sve tablice u prethodno korištenu bazu (stavio je sve tablice u bazu 'skladista')
+
+CREATE TABLE clanovi(
+	id INT NOT NULL PRIMARY KEY
+	, ime NVARCHAR(30)
+	, prezime NVARCHAR(30)
+	, adresa NVARCHAR(30)
+	, telefon CHAR(15)
+	, datum_uclanjenja DATETIME
+);
+GO;
+
+CREATE TABLE zanri(
+	id INT NOT NULL PRIMARY KEY
+	, naziv NVARCHAR(30)
+);
+GO;
+
+CREATE TABLE filmovi(
+	id INT NOT NULL PRIMARY KEY
+	, naziv NVARCHAR(30)
+	, reziser NVARCHAR(30)
+	, glavni_glumci NVARCHAR(100)
+	, godina_izdanja INT
+	, kolicina_DVD INT
+	, kolicina_VHS INT
+	, slika_naslovnice IMAGE
+	, id_zanra INT FOREIGN KEY REFERENCES zanri(id)
+);
+GO;
+
+CREATE TABLE cijene(
+	id INT NOT NULL PRIMARY KEY
+	, kategorija NVARCHAR(30)
+	, cijena SMALLMONEY
+);
+GO;	
+
+CREATE TABLE posudbe(
+	id_clana INT NOT NULL FOREIGN KEY REFERENCES clanovi(id)
+	, id_filma INT NOT NULL FOREIGN KEY REFERENCES filmovi(id)
+	, datum_posudbe DATETIME
+	, datum_povrata DATETIME
+	, id_cijene INT NOT NULL FOREIGN KEY REFERENCES cijene(id)
+	, CONSTRAINT PK_idevi PRIMARY KEY (id_clana, id_filma, id_cijene)
+);
+GO;
+
+--USE master;
+--DROP DATABASE videoteke;
+--GO;
+
+USE skladista;
+ALTER TABLE skladisna_mjesta
+ADD CONSTRAINT ck_provjera CHECK (mjesto IN('Zagreb', 'Rijeka', 'Sisak'));
+GO;
+
+--------------- kreiranje baze upisi_polaznika ------------------
+
+CREATE DATABASE upisi_polaznika;
+GO;
+
+USE upisi_polaznika;
+GO;
+
+CREATE TABLE polaznici(
+	id INT NOT NULL CHECK(id BETWEEN 1 AND 1000) PRIMARY KEY
+	, ime NVARCHAR(50) NOT NULL
+	, prezime NVARCHAR(50) NOT NULL
+	, mjesto_stanovanja NCHAR(25)
+);
+GO;
+
+CREATE TABLE tecajevi(
+	id char(3) NOT NULL PRIMARY KEY
+	, naziv NVARCHAR(50) NOT NULL
+);
+GO;
+
+CREATE TABLE upisi(
+	id_polaznika INT FOREIGN KEY REFERENCES polaznici(id)
+	, id_tecaja CHAR(3) FOREIGN KEY REFERENCES tecajevi(id)
+	CONSTRAINT PK_idevi PRIMARY KEY (id_polaznika, id_tecaja)
+);
+GO;
+
+----------------- unos podataka u tablice -----------------
+
+INSERT INTO polaznici VALUES (1, 'Ana', 'Miliæ', 'Zagreb');
+GO;
+INSERT INTO polaznici VALUES (2, 'Sanja', 'Tarak', 'Split');
+GO;
+INSERT INTO polaznici VALUES (3, 'Mladen', 'Gork', 'Osijek');
+GO;
+INSERT INTO polaznici VALUES (4, 'Ivana', 'Matkiæ', 'Split');
+GO;
+INSERT INTO polaznici VALUES (5, 'Marina', 'Aniæ', 'Osijek');
+GO;
+INSERT INTO polaznici VALUES (6, 'Ivica', 'Limiæ', 'Split');
+GO;
+
+INSERT INTO tecajevi VALUES ('P01', 'Osnove rada PC raèunala');
+GO;
+INSERT INTO tecajevi VALUES ('P02', 'Microsoft Word');
+GO;
+INSERT INTO tecajevi VALUES ('N01', 'SQL - osnove');
+GO;
+INSERT INTO tecajevi VALUES ('O01', 'Raèunalni operator - uredsko poslovanje');
+GO;
+INSERT INTO tecajevi VALUES ('O02', 'Specijalist poslovne primjene raèunala');
+GO;
+INSERT INTO tecajevi VALUES ('O03', 'Grafièki dizajner');
+GO;
+
+INSERT INTO upisi VALUES (1, 'P01');
+GO;
+INSERT INTO upisi VALUES (2, 'P02');
+GO;
+INSERT INTO upisi VALUES (3, 'N01');
+GO;
+INSERT INTO upisi VALUES (4, 'O01');
+GO;
+INSERT INTO upisi VALUES (5, 'O02');
+GO;
+INSERT INTO upisi VALUES (6, 'P01');
+GO;
+
+--USE model;
+--DROP DATABASE upisi_polaznika;
+--GO;
+
+USE Fakultet;
+SELECT imeNastavnik, prezNastavnik FROM nastavnik;
+GO;
+
+USE Fakultet;
+SELECT mbrStud, imeStud + ' ' + prezStud AS 'Ime i prezime'
+FROM stud;
+GO;
+
+SELECT DISTINCT imeStud FROM stud
+ORDER BY imeStud DESC;
+
+SELECT imeStud FROM stud
+GROUP BY imeStud
+ORDER BY imeStud DESC;
+
+SELECT mbrStud FROM ispit
+WHERE sifPred = 146;
+
+SELECT imeNastavnik, prezNastavnik, (koef + 0.4) * 800 AS 'Plaæa'
+FROM nastavnik;
+
+SELECT imeNastavnik, prezNastavnik, (koef + 0.4) * 800 AS 'Plaæa'
+FROM nastavnik
+WHERE ((koef + 0.4) * 800 < 3500) OR ((koef + 0.4) * 800 > 8000);
+
+SELECT * FROM stud 
+WHERE imeStud LIKE '[aeiou]%[aeiou]';
+
+SELECT * FROM stud
+WHERE imeStud LIKE '[^aeiou]%[^aeiou]';
+
+SELECT * FROM stud
+WHERE imeStud LIKE '[aeiou]%' OR imeStud LIKE '%[aeiou]';
+
+SELECT * FROM dbo.stud
+WHERE imeStud LIKE '%nk%' OR prezStud LIKE '%nk%';
+
+SELECT imeStud, prezStud FROM stud, ispit
+WHERE stud.mbrStud = ispit.mbrStud AND ocjena = 1 AND (sifPred BETWEEN 220 AND 240);
+
+SELECT imeStud, prezStud FROM stud JOIN ispit ON stud.mbrStud = ispit.mbrStud
+WHERE ocjena = 1 AND (sifPred BETWEEN 220 AND 240);
+
+SELECT DISTINCT imeStud, prezStud FROM stud JOIN ispit
+ON stud.mbrStud = ispit.mbrStud WHERE ocjena = 3;
+
+SELECT DISTINCT nazPred FROM pred 
+JOIN ispit ON ispit.sifPred = pred.sifPred;
+
+SELECT * FROM pred LEFT JOIN ispit ON pred.sifPred = ispit.sifPred
+WHERE datIspit IS NULL ORDER BY nazPred;
+
+SELECT nazPred FROM pred 
+WHERE nazPred NOT IN (SELECT DISTINCT nazPred FROM pred, ispit WHERE ispit.sifPred = pred.sifPred);
+
+SELECT nazPred, oznDvorana FROM pred LEFT JOIN rezervacija
+ON pred.sifPred = rezervacija.sifPred WHERE brojSatiTjedno > 2;
+
+SELECT nazPred, nazOrgJed, upisanoStud FROM pred JOIN orgjed
+ON pred.sifOrgjed = orgjed.sifOrgjed WHERE upisanoStud > 20;
+
+SELECT DISTINCT nazMjesto FROM mjesto JOIN stud ON mjesto.pbr = stud.pbrStan;
+
+SELECT imeStud, prezStud, nazPred, ocjena FROM ispit i
+JOIN stud s ON i.mbrStud = s.mbrStud
+JOIN pred p ON p.sifPred = i.sifPred;
+
+SELECT nazPred, oznDvorana, nazOrgjed FROM pred
+JOIN rezervacija ON pred.sifPred = rezervacija.sifPred
+JOIN orgjed ON orgjed.sifOrgjed = pred.sifOrgjed;
+
+SELECT DISTINCT imeStud, prezStud, nazMjesto FROM stud
+JOIN mjesto ON mjesto.pbr = stud.pbrStan
+JOIN ispit ON stud.mbrStud = ispit.mbrStud
+JOIN pred ON pred.sifPred = ispit.sifPred
+WHERE nazPred = 'Osnove baza podataka' AND ocjena = 1;
+
+SELECT imeNastavnik, prezNastavnik, nazMjesto, nazZupanija, nazPred, ocjena FROM nastavnik
+JOIN mjesto ON mjesto.pbr = nastavnik.pbrStan
+JOIN zupanija ON zupanija.sifZupanija = mjesto.sifZupanija
+JOIN ispit ON ispit.sifNastavnik = nastavnik.sifNastavnik
+JOIN pred ON pred.sifPred = ispit.sifPred
+WHERE ocjena = 2 OR ocjena = 3 ORDER BY nazPred;
+
+SELECT imeStud, prezStud
+, m.nazMjesto AS 'Mjesto roðenja'
+, z.nazZupanija AS 'Županija roðenja'
+, m2.nazMjesto AS 'Mjesto boravka'
+, z2.nazZupanija AS 'Županija broavka'
+FROM stud s
+JOIN mjesto m ON m.pbr = s.pbrRod
+JOIN zupanija z ON z.sifZupanija = m.sifZupanija
+JOIN mjesto m2 ON s.pbrStan = m2.pbr
+JOIN zupanija z2 ON z2.sifZupanija = m2.sifZupanija;
+
+SELECT DISTINCT nazMjesto FROM mjesto JOIN stud
+ON mjesto.pbr = stud.pbrStan WHERE pbrStan = pbrRod;
+
+SELECT DISTINCT imeNastavnik, prezNastavnik FROM nastavnik
+JOIN ispit ON ispit.sifNastavnik = nastavnik.sifNastavnik
+JOIN stud ON ispit.mbrStud = stud.mbrStud
+JOIN mjesto m1 ON m1.pbr = stud.pbrStan
+JOIN mjesto m2 ON m2.pbr = nastavnik.pbrStan
+WHERE m1.sifZupanija = m2.sifZupanija;
+
+SELECT imeStud, prezStud FROM stud
+JOIN mjesto m1 ON stud.pbrRod = m1.pbr
+JOIN mjesto m2 ON stud.pbrStan = m2.pbr
+WHERE pbrRod <> pbrStan AND m1.sifZupanija = m2.sifZupanija
+SELECT stud.*, nastavnik.* FROM stud, nastavnik
+WHERE stud.prezStud = nastavnik.prezNastavnik;
+
+USE upisi_polaznika;
+UPDATE tecajevi
+SET naziv = 'Osnove obrade teksta - MS Word'
+WHERE naziv = 'Microsoft Word';
+
+USE upisi_polaznika;
+UPDATE upisi
+SET id_tecaja = 'O03'
+WHERE id_polaznika = 6;
+
+USE upisi_polaznika;
+DELETE upisi
+WHERE id_tecaja = 'P01';
+
+USE Fakultet;
+SELECT oznDvorana, nazPred, sat INTO PredmetiDvorane 
+FROM pred JOIN rezervacija ON pred.sifPred = rezervacija.sifPred
+SELECT * FROM PredmetiDvorane;
+
+USE Fakultet;
+GO;
+CREATE VIEW Stanovanje AS        -- 'CREATE VIEW' must be the first statment in a query batch, vjerovatno zatš što je tada nedostajala toèkazarez(semicolon ';')
+SELECT imeNastavnik, prezNastavnik, nazMjesto
+FROM nastavnik JOIN mjesto
+ON nastavnik.pbrStan = mjesto.pbr;
+GO;
+SELECT * FROM Stanovanje;
+
+USE Fakultet;
+GO;
+CREATE VIEW ProlaznostIspita AS
+SELECT imeStud, prezStud, nazPred, ocjena, imeNastavnik, prezNastavnik
+FROM stud JOIN ispit ON stud.mbrStud =  ispit.mbrStud
+JOIN nastavnik ON nastavnik.sifNastavnik = ispit.sifNastavnik
+JOIN pred ON pred.sifPred = ispit.sifPred;
+GO;
+SELECT * FROM ProlaznostIspita;
+
+SELECT imeStud, prezStud, nazMjesto FROM stud JOIN mjesto
+ON mjesto.pbr = stud.pbrRod WHERE imeStud LIKE 'F%';				-- izlistanje pomoæu kljuène rijeèi 'LIKE'
+
+SELECT imeStud, prezStud, nazMjesto FROM stud JOIN mjesto
+ON mjesto.pbr = stud.pbrRod WHERE LEFT(imeStud, 1) = 'F';		-- izlistanje pomoæu funkcije 'LEFT()'
+
+SELECT imeNastavnik, prezNastavnik FROM nastavnik JOIN mjesto
+ON mjesto.pbr = nastavnik.pbrStan WHERE SUBSTRING(nazMjesto, 3, 1) = 'Z';
+
+SELECT imeStud, prezStud, imeNastavnik, prezNastavnik FROM stud
+JOIN ispit ON ispit.mbrStud = stud.mbrStud
+JOIN nastavnik ON ispit.sifNastavnik =  nastavnik.sifNastavnik
+WHERE SUBSTRING(imeStud, 5, 1) = SUBSTRING(imeNastavnik, 5, 1);   -- AND LEN(imeStud) > 4;
+
+SELECT nazZupanija FROM zupanija WHERE LEN(nazZupanija) BETWEEN 13 AND 20;
+
+SELECT imeStud, prezStud FROM stud WHERE DATENAME(m, datRodStud) = 'may';
+
+SELECT imeStud, prezStud FROM stud WHERE MONTH(datRodStud) = 5;
+
+SELECT DISTINCT imeStud, prezStud FROM stud JOIN ispit
+ON stud.mbrStud = ispit.mbrStud WHERE DAY(datIspit) BETWEEN 10 AND 20;
+
+SELECT imeNastavnik, prezNastavnik, m1.nazMjesto, imeStud, prezStud, m2.nazMjesto FROM nastavnik
+JOIN ispit ON ispit.sifNastavnik = nastavnik.sifNastavnik
+JOIN mjesto m1 ON m1.pbr = nastavnik.pbrStan
+JOIN stud ON stud.mbrStud = ispit.mbrStud
+JOIN mjesto m2 ON m2.pbr = stud.pbrRod
+WHERE MONTH(datIspit) = 6 AND m1.nazMjesto = m2.nazMjesto;
+
+-- baza 'Fakultet' je baza koju smo dobili na teèaju
